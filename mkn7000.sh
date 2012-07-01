@@ -1,5 +1,12 @@
 #!/bin/sh
+
+KERNEL_NAME="HomuraNote-ICS"
 export USE_SEC_FIPS_MODE=true
+export LOCALVERSION="-$KERNEL_NAME"
+export KBUILD_BUILD_VERSION="Alpha1"
+export WHOAMI_MOD="Homura"
+export HOSTNAME_MOD="Akemi"
+
 echo "GT-NN7000 KERNEL IMAGE BUILD START!!!"
 
 read -p "build? [(a)ll/(u)pdate/(z)Image default:update] " ANS
